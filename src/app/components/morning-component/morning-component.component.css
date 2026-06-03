@@ -1,0 +1,104 @@
+body {
+  direction: rtl;
+  font-family: 'Cairo', 'Amiri', sans-serif;
+  background: #0f172a; /* خلفية غامقة مريحة */
+  margin: 0;
+  color: #e2e8f0;
+}
+
+/* الكارت */
+.azkar-box {
+  width: 100%;
+  max-width: 800px;
+  background: #1e293b;
+  border-radius: 18px;
+  padding: 28px;
+  margin: 15px auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+
+  display: flex;
+  flex-direction: column;
+  position: relative; /* مهم عشان العناصر الداخلية */
+}
+
+.azkar-box:hover {
+  transform: translateY(-3px);
+}
+
+/* البسملة */
+.basmala {
+  text-align: center;
+  font-weight: bold;
+  color: #93c5fd;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+/* النص (أهم جزء) */
+.text {
+  font-size: 24px;   /* أكبر للقراءة */
+  line-height: 2.4;
+  color: #f1f5f9;
+  text-align: justify;
+}
+
+/* الثواب */
+.reward {
+  margin-top: 18px;
+  font-size: 16px;
+  color: #34d399;
+  text-align: center;
+  line-height: 1.9;
+}
+
+/* رقم الذكر */
+.circleR {
+  display: inline-flex;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #334155;
+  color: #e2e8f0;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* العداد */
+.circleL {
+  display: inline-flex;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #22c55e;
+  color: #0f172a;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+.circleL:hover {
+  background: #16a34a;
+  transform: scale(1.08);
+}
+
+/* لما يخلص */
+.done {
+  background: #64748b !important;
+  color: #cbd5e1 !important;
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+.reset-icon {
+  font-size: 20px;
+  color: #93c5fd;
+  cursor: pointer;
+  display: inline-block;
+}

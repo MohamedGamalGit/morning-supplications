@@ -1,0 +1,16 @@
+:host {
+  display: block;
+  width: 250px;
+  min-height: 100vh;
+}
+
+.sidebar {
+  height: 100%;
+  text-align: center;
+}
+
+.nav-link.active {
+  background-color: cornsilk;
+  border-radius: 8px;
+  color: black;
+}

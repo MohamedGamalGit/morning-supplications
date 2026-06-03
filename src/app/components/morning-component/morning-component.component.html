@@ -1,0 +1,27 @@
+<div class="container" *ngFor="let zikr of azkar">
+  <div class="azkar-box">
+
+    <p class="basmala">
+      {{ zikr.start }}
+    </p>
+
+    <p class="text" style="text-align: center;">
+      {{ zikr.text }}
+    </p>
+
+    <p class="reward">
+      {{ zikr.reward }}
+    </p>
+
+    <div class="actions">
+      <span class="circleR">{{ zikr.id }}</span>
+
+      <i class="fa-solid fa-rotate-right reset-icon" (click)="reset(zikr)">
+      </i>
+
+      <span class="circleL" (click)="decrease(zikr)" [class.done]="zikr.count === 0">
+        {{ zikr.count }}
+      </span>
+    </div>
+  </div>
+</div>
